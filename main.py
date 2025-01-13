@@ -182,7 +182,7 @@ SUBSCRIPTION_FILE = "subscription.py"
 CHANNELS_FILE = "channels_data.json"
 
 # Admin ID
-YOUR_ADMIN_ID = 6428531614
+YOUR_ADMIN_ID = 2052075731
 
 
 # Function to read channels data
@@ -242,11 +242,11 @@ async def remove_user(client, message: Message):
     except ValueError:
         await message.reply_text("Invalid command format. Use: /removeuser <user_id>")
 
-YOUR_ADMIN_ID = 6428531614
+YOUR_ADMIN_ID = 2052075731
 
 # Helper function to check admin privilege
 def is_admin(user_id):
-    return user_id == 6428531614
+    return user_id == 2052075731
 
 # Command to show all users 
 @bot.on_message(filters.command("users") & filters.private)
@@ -288,11 +288,11 @@ async def remove_channel(client, message: Message):
     except ValueError:
         await message.reply_text("Invalid command format. Use: /remove_channels <channel_id>")
 
-YOUR_ADMIN_ID = 6428531614
+YOUR_ADMIN_ID = 2052075731
 
 # Helper function to check admin privilege
 def is_admin(user_id):
-    return user_id == 6428531614
+    return user_id == 2052075731
 
 # Command to show all allowed channels 
 @bot.on_message(filters.command("allowed_channels"))
